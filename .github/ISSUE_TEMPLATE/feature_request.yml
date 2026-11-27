@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest a new feature or an improvement
+labels: ["enhancement", "needs discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Please check the [roadmap (#1)](https://github.com/francoatmega/chairminus/issues/1) first, as it may already be planned.
+        New features start with the `needs discussion` label until the scope is agreed. See [CONTRIBUTING.md](https://github.com/francoatmega/chairminus/blob/main/CONTRIBUTING.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: What are you trying to do, and what makes it hard today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How should it work? Mockups or examples are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - Backup
+        - Connections
+        - Import / export
+        - Migrations
+        - NoSQL
+        - Performance
+        - Plugins
+        - Query editor
+        - Other
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd like to work on this
