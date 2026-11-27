@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Roadmap
+    url: https://github.com/francoatmega/chairminus/issues/1
+    about: See the planned features and pick one to work on.
+  - name: Contributing guide
+    url: https://github.com/francoatmega/chairminus/blob/main/CONTRIBUTING.md
+    about: How to pick an issue, discuss changes and open a pull request.
