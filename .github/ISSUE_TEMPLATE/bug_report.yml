@@ -1,0 +1,64 @@
+name: Bug report
+description: Something isn't working
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting a bug! Please check that it hasn't been reported already.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect to see?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Connect to …
+        2. Run …
+        3. See error
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Database engine
+      multiple: true
+      options:
+        - PostgreSQL
+        - MySQL
+        - MariaDB
+        - SQLite
+        - MongoDB
+        - Redis
+        - Elasticsearch
+        - OpenSearch
+        - Neo4j
+        - Not related to a specific engine
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Chairminus version
+      placeholder: e.g. 1.2.0, or the commit if running from source
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error messages, logs or screenshots
+      description: Remove passwords, hostnames and any private data before pasting.
